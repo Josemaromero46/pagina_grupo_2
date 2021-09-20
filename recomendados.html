@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa del Libro - Recomendados</title>
+    <link rel="icon" href="logo_la_casa_del_libro.ico">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+   
+
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        [class*='col-']{
+          float:left;
+        }
+
+        .bordemenu{
+            border-bottom: solid 2px #004D43;
+        }
+
+        .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+            height:60px;
+            position: fixed;
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 0px;
+            font-size: 38px;
+            margin-bottom: 10px;
+            text-align: center;
+            
+        }
+        .menu{
+            background-color:#0f433a;
+            height: 130px;
+            font-family: Quicksand;
+            font-size: 20px;
+            text-align: center;
+            margin: 55px 0px 0px -20px ;   
+        }
+        
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+            font-family: Raleway;
+            padding-top: 200px;
+        }
+        
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:15px;
+        }
+        .espaciode{
+            margin-right: 15px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+            color: black;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        .num{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -20px;
+            color: black;
+        }
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+            color: black;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+            color: black;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+        }
+        .recomendados{
+            color: #D59b34;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: white;
+        }
+
+
+        .preco{
+            margin-top: 550px;
+        }
+        .recomendacion{
+            width:94%;
+            height: 850px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            background-image: url("https://static-cse.canva.com/blob/216253/Portadas-libros.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .imgreco{
+            width:300px;
+            height: 300px;
+            margin: 50px 0px 0px 25%;
+            
+        }
+        .treco{
+            color: white;
+            font-size: 50px;
+            margin: 40px 0px 0px 20px;
+            text-shadow: 1px 1px 5px black;
+            
+        }
+        .precomendacion{
+            color: white;
+            font-size: 20px;
+            margin: 40px 0px 0px 20px;
+            text-shadow: 1px 1px 5px black;
+            
+
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        
+
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+
+
+
+
+
+
+        .col-1{width: 8.33%;}
+       .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+
+
+
+
+
+        /*Tablet*/
+        /*Tablet*/
+        /*Tablet*/
+        /*Tablet*/
+        /*Tablet*/
+
+
+
+
+
+
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          
+
+
+          .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+            height:60px;
+            position: fixed;
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 25px;
+            font-size: 38px;
+            text-align: center;
+        }
+        .menu{
+            background-color:#0f433a;
+            height: 80px;
+            font-family: Quicksand;
+            font-size: 20px;
+            margin: 57px 0px 0px -10px ;
+            text-align: center;
+        }
+        
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+            font-family: Raleway;
+            padding-top: 200px;
+        }
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:40px;
+        }
+        .espaciode{
+            margin-right: 40px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+            color: black;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+            color: black;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+            color: black;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+        }
+        .recomendados{
+            color: #D59b34;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: white;
+        }
+
+
+        .preco{
+            margin-top: 550px;
+        }
+        .recomendacion{
+            width:94%;
+            height: 95vh;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            background-image: url("https://static-cse.canva.com/blob/216253/Portadas-libros.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .imgreco{
+            width:300px;
+            height: 400px;
+            margin: 50px 0px 0px 50px;
+            
+        }
+        .treco{
+            color: white;
+            font-size: 50px;
+            margin: 40px 0px 0px 80px;
+            text-shadow: 1px 1px 5px black;
+            
+        }
+        .precomendacion{
+            color: white;
+            font-size: 20px;
+            margin: 40px 0px 0px 80px;
+            text-shadow: 1px 1px 5px black;
+            
+
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        
+
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+
+        .bordemenu{
+            border-bottom: none;
+        }
+        }
+        
+
+
+        /*Computadora*/
+        /*Computadora*/
+        /*Computadora*/
+        /*Computadora*/
+        /*Computadora*/
+
+
+
+
+        @media only screen and (min-width:1100px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;}  
+          
+          .espaciado{
+            margin-right: -30px;
+        }
+        .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+            height:60px;
+            position: fixed;
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 25px;
+            font-size: 38px;
+            text-align: left;
+        }
+        .menu{
+            font-family: Quicksand;
+            font-size: 20px;
+            margin: 20px 0px 0px -10px ;
+            background-color: transparent;
+            text-align: left;
+        }
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+            font-family: Raleway;
+        }
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:40px;
+        }
+        .espaciode{
+            margin-right: 40px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+            color: black;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        .num{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -20px;
+            color: black;
+        }
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+            color: black;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+            color: black;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+        }
+        .recomendados{
+            color: #D59b34;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: white;
+        }
+
+
+        .preco{
+            margin-top: 550px;
+        }
+        .recomendacion{
+            width: 94%;
+            height: 95vh;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            background-image: url("https://static-cse.canva.com/blob/216253/Portadas-libros.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .imgreco{
+            width:300px;
+            height: 400px;
+            margin: 50px 0px 0px 100px;
+            
+        }
+        .treco{
+            color: white;
+            font-size: 50px;
+            margin: 40px 0px 0px 80px;
+            text-shadow: 1px 1px 5px black;
+            
+        }
+        .precomendacion{
+            color: white;
+            font-size: 20px;
+            margin: 40px 0px 0px 80px;
+            text-shadow: 1px 1px 5px black;
+            
+
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        
+
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+        .bordemenu{
+            border-bottom: none;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contmenu col-12 col-m-12 col-g-12">
+        <div class="logo col-12 col-m-12 col-g-4"><a class="principal" href="index.html"><span>L</span>a Casa <span class="del">del</span> Libro</a></div>
+        <div class="menu">
+            <div class="bordemenu col-12 col-m-6 col-g-2 espaciado"><a class="categorias" href="categorias.html">Categorías</a></div>
+            <div class="bordemenu col-12 col-m-6 col-g-2"><a class="recomendados" href="recomendados.html">Recomendados</a></div>
+            <div class="bordemenu col-12 col-m-6 col-g-2 espaciado"><a class="novedades" href="novedades.html">Novedades</a></div>
+            <div class="col-12 col-m-6 col-g-2"><a class="contactanos" href="contactanos.html">Contáctanos</a></div>
+        </div>
+    </div>
+    
+    <h1 class="ebooks">Bienvenido a un mundo de Libros</h1>
+    <div class="linea"></div>
+    <p class="espacioizq subtitulo">Los mejores libros del momento</p>
+    <div class="linea2"></div>
+    <div class="libros">
+        <div class="libro1 col-12 col-m-6 col-g-3">
+            <div class="espaciolib espacioiz">
+                <a href="libros/la_mujer_que_sabe_guardar_secretos.html"><img class="img1" src="https://i2.wp.com/globalbookclub.s3.amazonaws.com/resources/3815607/la_mujer_que_sabe_guardar_secretos_la_verdadera_historia_de_los_espias_rusos_en_la_que_se_inspira_the_americans_la_serie_de_culto_de_amazon_prime_video/cover_200.jpg?w=770&ssl=1"/>
+                <div class="linea3"></div>
+                <p class="plibros nomlibro">La mujer que sabe guardar secretos</p>
+                <p class="plibros autor">Elena Vavilona</p>
+                <p><img class="estrella " src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+        <div class="libro2 col-12 col-m-6 col-g-3">
+            <div class="espaciolib">
+                <a href="libros/hotel_flanagans.html"><img class="img2" src="https://i0.wp.com/globalbookclub.s3.amazonaws.com/resources/3808400/hotel_flanagans_la_apasionante_historia_de_un_emblematico_hotel_londinense/cover_200.jpg?w=770&ssl=1"/>
+                <div class="linea4"></div>
+                <p class="plibros2 nomlibro2">Hotel flanagans</p>
+                <p class="plibros2 autor2">Asa Hellberg</p>
+                <p><img class="estrella2" src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num2">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+        <div class="libro3 col-12 col-m-6 col-g-3">
+            <div class="espaciolib">
+                <a href="libros/pequenos_desastres.html"><img class="img2" src="https://i2.wp.com/globalbookclub.s3.amazonaws.com/resources/3815606/pequenos_desastres/cover_200.jpg?w=770&ssl=1"/>
+                <div class="linea4"></div>
+                <p class="plibros2 nomlibro2">Pequeños desastres</p>
+                <p class="plibros2 autor2">Sarah Vaughan</p>
+                <p><img class="estrella2" src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num2">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+        <div class="libro4 col-12 col-m-6 col-g-3">
+            <div class="espaciolib espaciode">
+                <a href="libros/el_druida.html"><img class="img1" src="https://i1.wp.com/globalbookclub.s3.amazonaws.com/resources/3764222/el_druida/cover_200.jpg?w=770&ssl=1"/>
+                <div class="linea3"></div>
+                <p class="plibros nomlibro">El druida</p>
+                <p class="plibros autor">Steven A. McKay</p>
+                <p><img class="estrella " src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <p class="espacioizq subtitulo preco">Únete a nuestra comunidad de lectores</p>
+    <div class="linea2"></div>
+    <div class="recomendacion">
+        <img class="imgreco col-6 col-m-4 col-g-3" src="https://pm1.narvii.com/6208/434597c57fa558f35a20655f49c20e409d13e208_hq.jpg"/>
+        <h1 class="treco col-12 col-m-4 col-g-4">Descubre Lecturas Apasionantes</h1>
+        <p class="precomendacion col-12 col-m-10 col-g-4">Si no sabes que leer navega por nuestras categorías <br><br>Hemos clasificado los libros para que encuentres lo inesperado: un libro maravilloso, una temática desconocida o un autor fascinante</p>
+    </div>
+        
+    
+
+    <p class="espacioizq subtitulo">Recomendados de terror</p>
+    <div class="linea2"></div>
+    <div class="libros">
+        <div class="libro1 col-12 col-m-6 col-g-3">
+            <div class="espaciolib espacioiz">
+                <a href="libros/el_sotano.html"><img class="img1" src="https://imagessl1.casadellibro.com/a/l/t5/31/9788408214731.jpg"/>
+                <div class="linea3"></div>
+                <p class="plibros nomlibro">EL sótano</p>
+                <p class="plibros autor">Natasha Preston</p>
+                <p><img class="estrella " src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+        <div class="libro2 col-12 col-m-6 col-g-3">
+            <div class="espaciolib">
+                <a href="libros/apocalipsis.html"><img class="img2" src="https://imagessl4.casadellibro.com/a/l/t5/34/9788466357234.jpg"/>
+                <div class="linea4"></div>
+                <p class="plibros2 nomlibro2">Apocalipsis</p>
+                <p class="plibros2 autor2">Stephen King</p>
+                <p><img class="estrella2" src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num2">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+        <div class="libro3 col-12 col-m-6 col-g-3">
+            <div class="espaciolib">
+                <a href="libros/el_instituto.html"><img class="img2" src="https://imagessl7.casadellibro.com/a/l/t5/57/9788401022357.jpg"/>
+                <div class="linea4"></div>
+                <p class="plibros2 nomlibro2">El instituto</p>
+                <p class="plibros2 autor2">Stephen King</p>
+                <p><img class="estrella2" src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num2">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+        <div class="libro4 col-12 col-m-6 col-g-3">
+            <div class="espaciolib espaciode">
+                <a href="libros/la_huida.html"><img class="img1" src="https://imagessl4.casadellibro.com/a/l/t5/44/9788408245544.jpg"/>
+                <div class="linea3"></div>
+                <p class="plibros nomlibro">La huida</p>
+                <p class="plibros autor">Natasha Preston</p>
+                <p><img class="estrella " src="https://ouch-cdn2.icons8.com/o6YouKmdOelXs_W9-WXWAfYETc2hbLYDS1Y0LQsdG00/rs:fit:784:745/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTUy/L2FkNzcyYjY0LWJm/NjMtNDdhMS1iNjE1/LWEzMWQ1ZmFmMjUw/ZC5zdmc.png"><spam class="num">5/5</spam></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

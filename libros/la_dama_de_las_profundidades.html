@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa del Libro</title>
+    <link rel="icon" href="/logo_la_casa_del_libro.ico">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+   
+
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        [class*='col-']{
+          float:left;
+        }
+        .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+            height:60px;
+            position: fixed;
+            
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 0px;
+            font-size: 38px;
+            margin-bottom: 10px;
+            text-align: center;
+            
+        }
+        .menu{
+            background-color:#0f433a;
+            height: 130px;
+            font-family: Quicksand;
+            font-size: 20px;
+            text-align: center;
+            margin: 55px 0px 0px -20px ;   
+        }
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:40px;
+        }
+        .espaciode{
+            margin-right: 40px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        .num{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -20px;
+        }
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+            
+        }
+        .recomendados{
+            color: white;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: white;
+        }
+
+
+        .contlibro{
+            margin-top:120px;
+        }
+
+
+        .imglibro{
+            margin: 100px 0px 0px 100px;
+            box-shadow: 10px -10px #edb131;
+            width: 229px;
+            height:350px;
+        }
+
+        .autor{
+            color: #847F7F;
+        }
+        .infolibro{
+            height: 100%;
+            padding-right: 35px;
+            border-right: solid 1px #ccc;
+            margin-left: 20px;
+        }
+        .tlibro{
+            padding-top: 10px;
+        }
+        .plibro{
+            font-family: Quicksand;
+        }
+        .tpromo{
+            text-align: center;
+            font-family: Quicksand;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        .leer{
+            text-align: center;
+            font-family: Quicksand;
+            background-color:#edb131;
+            color:white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top:10px;
+            width: 90%;
+            height: auto;
+            padding: 5px 0px;
+            margin-bottom: 20px;
+            transition: background-color .5s;
+            
+        }
+        .leer:hover{
+            background-color: #f8c75d; 
+        }
+        .ppromo{
+            text-align: center;
+            font-family: Quicksand;
+            padding-top: 10px;
+            margin: 0px 10px;
+        }
+        .rosa{
+            color: #d9017a;
+        }
+        .imgguardar{
+            
+            vertical-align: middle;
+        }
+        .guardar{
+            font-family:Quicksand;
+            color: #d9017a;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0px 18px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 6px;
+            
+            transition: background-color 1.5s;
+           
+        }
+        .guardar:hover{
+            background-color: #fad8ebdc;
+            color: black;
+        }
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+        .tlibro:hover{
+            text-decoration:underline;
+        }
+
+
+
+
+        .col-1{width: 8.33%;}
+       .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+
+
+
+
+
+
+        /*Tablet*/
+
+
+
+
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          
+
+          .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+            height:60px;
+            position: fixed;
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 25px;
+            font-size: 38px;
+            text-align: center;
+        }
+        .menu{
+            background-color:#0f433a;
+            height: 80px;
+            font-family: Quicksand;
+            font-size: 20px;
+            margin: 57px 0px 0px -10px ;
+            text-align: center;
+        }
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:40px;
+        }
+        .espaciode{
+            margin-right: 40px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        .num{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -20px;
+        }
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+            
+        }
+        .recomendados{
+            color: white;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: white;
+        }
+
+
+        .contlibro{
+            margin-top:120px;
+        }
+
+
+        .imglibro{
+            margin: 60px 0px 20px 30%;
+            box-shadow: 10px -10px #edb131;
+            width: 229px;
+            height:350px;
+        }
+
+        .autor{
+            color: #847F7F;
+        }
+        .infolibro{
+            height: 100%;
+            padding-right: 35px;
+            border-right: solid 1px #ccc;
+        }
+        .tlibro{
+            padding-top: 10px;
+        }
+        .plibro{
+            font-family: Quicksand;
+        }
+        .tpromo{
+            text-align: center;
+            font-family: Quicksand;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        .leer{
+            text-align: center;
+            font-family: Quicksand;
+            background-color:#edb131;
+            color:white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top:10px;
+            width: 90%;
+            height: auto;
+            padding: 5px 0px;
+            margin-bottom: 20px;
+            transition: background-color .5s;
+            
+        }
+        .leer:hover{
+            background-color: #f8c75d; 
+        }
+        .ppromo{
+            text-align: center;
+            font-family: Quicksand;
+            padding-top: 10px;
+            margin: 0px 10px;
+        }
+        .rosa{
+            color: #d9017a;
+        }
+        .imgguardar{
+            
+            vertical-align: middle;
+        }
+        .guardar{
+            font-family:Quicksand;
+            color: #d9017a;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0px 18px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 6px;
+            
+            transition: background-color 1.5s;
+           
+        }
+        .guardar:hover{
+            background-color: #fad8ebdc;
+            color: black;
+        }
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+        .tlibro:hover{
+            text-decoration:underline;
+        }
+
+        }
+
+
+
+
+
+        /*Computadora*/
+
+
+
+
+        
+        @media only screen and (min-width:1100px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;}  
+          
+          .espaciado{
+            margin-right: -30px;
+        }
+        .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+            height:60px;
+            position: fixed;
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 25px;
+            font-size: 38px;
+            text-align: left;
+        }
+        .menu{
+            font-family: Quicksand;
+            font-size: 20px;
+            margin: 20px 0px 0px -10px ;
+            background-color: transparent;
+            text-align: left;
+        }
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:40px;
+        }
+        .espaciode{
+            margin-right: 40px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        .num{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -20px;
+        }
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+            
+        }
+        .recomendados{
+            color: white;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: white;
+        }
+
+
+        .contlibro{
+            margin-top:120px;
+        }
+
+
+        .imglibro{
+            margin: 0px 0px 0px 100px;
+            box-shadow: 10px -10px #edb131;
+            width: 229px;
+            height:350px;
+        }
+
+        .autor{
+            color: #847F7F;
+        }
+        .infolibro{
+            height: 100%;
+            padding-right: 35px;
+            border-right: solid 1px #ccc;
+            margin-left: 0px;
+        }
+        .tlibro{
+            padding-top: 10px;
+        }
+        .plibro{
+            font-family: Quicksand;
+        }
+        .tpromo{
+            text-align: center;
+            font-family: Quicksand;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        .leer{
+            text-align: center;
+            font-family: Quicksand;
+            background-color:#edb131;
+            color:white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top:10px;
+            width: 90%;
+            height: auto;
+            padding: 5px 0px;
+            margin-bottom: 20px;
+            transition: background-color .5s;
+            
+        }
+        .leer:hover{
+            background-color: #f8c75d; 
+        }
+        .ppromo{
+            text-align: center;
+            font-family: Quicksand;
+            padding-top: 10px;
+            margin: 0px 10px;
+        }
+        .rosa{
+            color: #d9017a;
+        }
+        .imgguardar{
+            
+            vertical-align: middle;
+        }
+        .guardar{
+            font-family:Quicksand;
+            color: #d9017a;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0px 18px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 6px;
+            
+            transition: background-color 1.5s;
+           
+        }
+        .guardar:hover{
+            background-color: #fad8ebdc;
+            color: black;
+        }
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+        .tlibro:hover{
+            text-decoration:underline;
+        }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="contmenu col-12 col-m-12 col-g-12">
+        <div class="logo col-12 col-m-12 col-g-4"><a class="principal" href="/index.html"><span>L</span>a Casa <span class="del">del</span> Libro</a></div>
+        <div class="menu">
+            <div class="col-12 col-m-6 col-g-2 espaciado"><a class="categorias" href="/categorias.html">Categorías</a></div>
+            <div class="col-12 col-m-6 col-g-2"><a class="recomendados" href="/recomendados.html">Recomendados</a></div>
+            <div class="col-12 col-m-6 col-g-2 espaciado"><a class="novedades" href="/novedades.html">Novedades</a></div>
+            <div class="col-12 col-m-6 col-g-2"><a class="contactanos" href="/contactanos.html">Contáctanos</a></div>
+        </div>
+    </div>
+    
+    <div class="contlibro col-12 col-m-12 col-g-12">
+        <div class="col-12 col-m-12 col-g-4">
+            <img class="imglibro" src="https://globalbookclub.s3.amazonaws.com/resources/3955758/la_dama_de_las_profundidades/cover_200.jpg" />
+        </div>
+        <div class="infolibro col-12 col-m-12 col-g-5">
+            <div class="col-12 col-m-12 col-g-12">
+                <h1 class="tlibro">LA DAMA DE LAS PROFUNDIDADES</h1>
+                <h3 class="autor">CHIARA CARMINATI</h3>
+            </div>
+            <div class="plibro col-12 col-m-12 col-g-12">
+                <br>
+                <h3 class="rosa">Sinopsis</h3>
+                <br>
+                <p>Desde pequeña Sylvia siente un amor infinito por el mar. Y cuando, aún siendo una adolescente, emerge de su primera inmersión, tiene en mente una única certeza: convertirse en bióloga marina y pasarse la vida en el agua. Desde entonces, Sylvia nunca ha dejado de luchar por el «corazón azul del planeta».</p>
+                <br>
+                <br>
+                <a href="javascript:history.back()"><img src="https://cdn-icons-png.flaticon.com/512/54/54623.png" height=auto width="40" alt="Botón"/></a>
+            </div>
+        </div>
+        <div class="promo col-12 col-m-12 col-g-3">
+            <p class="tpromo">Gratuito</p>
+            <a href=""><p class="leer">Empezar a leer</p></a>
+            <p class="tpromo">Descárgarlo</p>
+            <p class="ppromo">Descárgalo y empieza a leer en cualquier momento</p>
+            <a href=""><p class="leer">Descargar</p></a>
+            <a href=""><p class="guardar"><img class="imgguardar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1024px-Heart_coraz%C3%B3n.svg.png" width="20px" height="auto"/>   Guardar</p></a>
+        </div>
+    </div>
+</body>
+</html>

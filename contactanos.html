@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa Del Libro - Formulario de contacto</title>
+    <link rel="icon" href="logo_la_casa_del_libro.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        [class*='col-']{
+          float:left;
+        }
+        .bordemenu{
+            border-bottom: solid 2px #004D43;
+        }
+        
+        .contmenu{
+            padding:0px 0px 5px 10px ;
+            background-color: #004D43;
+            color: white;
+            font-family: Special;
+        }
+        span{
+            font-size: 50px;
+            color: #D59b34;
+            font-family:Special;
+        }
+        
+        .logo{
+            padding-left: 25px;
+            font-size: 38px;
+            
+        }
+        .menu{
+            font-family: Quicksand;
+            font-size: 20px;
+            margin: 20px 0px 0px 0px ;
+            text-align: center;
+        }
+        .del{
+            font-size: 20px;
+            color: white;
+        }
+
+        .c{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .ebooks{
+            padding-top: 110px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .linea{
+            margin:35px 40px 25px;
+            border-bottom: solid 1px #ccc;
+        }
+        .espacioizq{
+            margin-left:40px;
+        }
+        .subtitulo{
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .linea2{
+            margin:10px 40px;
+            border-bottom: solid 1px #ccc;
+        }
+        
+        
+        .img1{
+            margin: 10px 30px;
+            width: 200px;
+            height: 300px
+        }
+        .img2{
+            margin: 10px 43px;
+            width: 200px;
+            height: 300px
+        }
+        .espaciolib{
+            border:solid 1px #ccc;
+            border-radius: 5px;
+            margin:15px;
+            height: 500px;
+           
+        }
+        .espacioiz{
+            margin-left:40px;
+        }
+        .espaciode{
+            margin-right: 40px;
+        }
+        .plibros{
+            margin-left: 30px;
+            font-family: Quicksand;
+        }
+        .nomlibro{
+            font-weight: bold;
+        }
+        .autor{
+            color: #847F7F;
+        }
+        .linea3{
+            margin:5px 30px 15px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella{
+            width:18px;
+            height: auto;
+            margin:40px 29px 47px;
+            vertical-align: middle;
+        }
+        .num{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -20px;
+        }
+
+
+        .plibros2{
+            margin-left: 42px;
+            font-family: Quicksand;
+        }
+        .nomlibro2{
+            font-weight: bold;
+        }
+        .autor2{
+            color: #847F7F;
+        }
+        .linea4{
+            margin:5px 40px 15px 42px;
+            border-bottom: solid 1px #ccc;
+        }
+        .estrella2{
+            width:18px;
+            height: auto;
+            margin:40px 41px 47px;
+            vertical-align: middle;
+        }
+        .num2{
+            font-size: 15px;
+            font-family: Quicksand;
+            margin-left: -32px;
+        }
+       
+        a{
+            text-decoration:none;
+        }
+        .principal{
+            color: white;
+        }
+        .categorias{
+            color: white;
+        }
+        .recomendados{
+            color: white;
+        }
+        .novedades{
+            color: white;
+        }
+        .contactanos{
+            color: #D59b34;
+        }
+        .col-1{width: 8.33%;}
+       .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          .c{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .bordemenu{
+            border-bottom: none;
+        }
+
+        }
+        
+        @media only screen and (min-width:1100px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;}  
+          .c{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+          .espaciado{
+            margin-right: -30px;
+            
+        }
+        .menu{
+            text-align: left;
+        }
+        
+        }
+        .cont{
+            background-image: url(https://images5.alphacoders.com/394/394862.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 93vh;
+        }
+        .cont .form{
+            font-weight: normal;
+            font-family: sans-serif;
+            color: #ffb026;
+            font-size:large;
+        }
+        .cont .form span{
+            font-weight: normal;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: large;
+        }
+        .contenedor{
+            background-color: rgba(0,0,0,0.6) ;
+            width: 90%;
+            max-width: 650px;
+            margin: auto;
+            padding: 5px 35px;
+            margin-top: 30px;
+            padding-bottom: 30px;
+            border-radius:3px;
+
+        }
+        .form-label{
+            display: block;
+            color: #ff851b;
+            font-size: 16px;
+            font-family: Quicksand;
+            position: relative;
+        }
+        .form-input, .form-textarea{
+            background-color: rgba(0,0,0,0.7);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #ff851b;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #fff;
+            font-family: Quicksand;
+
+        }
+        .form-textarea{
+            resize: vertical;
+            max-height: 150px;
+            min-height: 50px;
+        }
+        .btn-submit{
+            width: 100%;
+            height: 50px;
+            font-family: Quicksand;
+            outline: none;
+            background:#ff851b;
+            font-size: 16px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            cursor:pointer;
+            transition: all .5s ease;
+        }
+        .btn-submit:hover{
+            background-color: #eca598;
+        }
+        .form-tittle{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .categorias:hover{
+            color:#D59b34;
+        }
+        .recomendados:hover{
+            color:#D59b34;
+        }
+        .novedades:hover{
+            color:#D59b34;
+        }
+        .contactanos:hover{
+            color:#D59b34;
+        }
+    </style>
+</head>
+<body>
+    <div style="float: left;" class="col-12">
+        <nav class="contmenu col-12 col-m-12 col-g-12">
+            <div class="logo col-12 col-m-12 col-g-4 "><a class="principal" href="index.html"><span>L</span>a Casa <span class="del">del</span> Libro</a></div>
+            <div class="menu col-g-8 col-m-12 col-12">
+                <div class="bordemenu col-12 col-m-4 col-g-3 espaciado"><a class="categorias" href="categorias.html">Categorías</a></div>
+                <div class="bordemenu col-12 col-m-8 col-g-3"><a class="recomendados" href="recomendados.html">Recomendados</a></div>
+                <div class="bordemenu col-12 col-m-4 col-g-3 espaciado"><a class="novedades" href="novedades.html">Novedades</a></div>
+                <div class="col-12 col-m-8 col-g-3"><a class="contactanos" href="contactanos.html">Contáctanos</a></div>
+            </div>
+        </nav>
+        <div class="cont col-12 col-m-12 col-g-12">
+           <div class="contenedor">
+            <form action="">
+                <div class="form" >
+                    <h1 class="form-tittle">Contacto</h1>
+                </div>
+                <label for="nombre" class="form-label">Nombres:</label>
+                <input type="text" id="nombre"class="form-input" placeholder="Escriba su nombre">
+
+                <label for="dirección" class="form-label">Direccion</label>
+                <input type="text" class="form-input" id="direccion" placeholder="Escriba su dirección">
+
+                <label for="correo" class="form-label">Correo Electronico</label>
+                <input type="text" class="form-input" id="correo" placeholder="Escriba su correo">
+
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" class="form-textarea" placeholder="Aqui escriba su mensaje"></textarea>
+                <input type="submit" class="btn-submit" value="Enviar consulta">
+            </form>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
